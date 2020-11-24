@@ -1,0 +1,55 @@
+.navbar-brand {
+    margin-left: 10%;
+}
+
+.nav-link {
+    margin-left: 10%;
+}
+
+body {
+    background: #aaaaaa;
+    background-image: url(../img/grey_wall.png);
+}
+
+hr {
+    border: 1px solid;
+}
+
+.card {
+    max-width: 22rem;
+}
+
+.card:hover {
+    border: 1px solid;
+}
+
+.icon-comment:hover {
+    width: 26px;
+    height: 26px;
+}
+
+.icon-love:hover {
+    width: 24.5px;
+    height: 24.5px;
+}
+
+.inv {
+    color: rgba(0, 0, 0, 0);
+}
+
+.rounded-corner {
+    border-radius: 62px;
+}
+
+.bg-blur {
+    background-image: url(../img/grey_wall_blur.jpg);
+}
+
+.bg-highlight {
+    /* background: #272727; */
+    background: linear-gradient(#10416b, black);
+}
+
+.bg-fall20 {
+    background: linear-gradient(to left, rgb(233, 185, 27), rgb(190, 71, 28), rgb(174, 19, 35));
+}
