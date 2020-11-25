@@ -39,15 +39,55 @@
         </script>
     </nav>
 
-    <div class="container mt-3 border-light bg-white pb-1 mb-4 rounded-corner">
+    <div class="container mt-3 border-light pb-1 mb-4 rounded-corner tweet">
         <div class="text-center pt-1 pb-1">
             <hr>
-            <h2>This Page is Under Construction!</h2>
-            <img src="img/under-construction.png" alt="Under Construction Image" loading="lazy">
-            <h3>Coming Soon...</h3>
+            <small>25 November 2020</small>
+            <!-- <small>21 November 2020 <span class="text-info">Updated at 23 November 2020</span></small> -->
+            <h1>Request and Ask</h1>
             <hr>
         </div>
+        <p class="text-justify">You can make a request or ask any question regarding what content I should talk about,
+            or the website itself, or even about me personally. Just put your thoughts on the comment section bellow</p>
+        <hr>
+        <div class="countComments">
+            <h5 class="text-center thoughts-on">COMMENTS</h5>
+        </div>
+        <dl>
+            <div class="comments-web-log">
+
+            </div>
+        </dl>
+        <hr>
+        <h5 class="text-center">LEAVE A REPLY</h5>
+        <form>
+            <input type="hidden" id="tweet" name="tweet" value="comments-web-log">
+            <div class="form-group row">
+                <label for="name" class="col-sm-1 col-form-label">Name</label>
+                <div class="col-sm-4">
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Your Name. (Optional)">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="comment" class="col-sm-1 col-form-label">Comment</label>
+                <div class="col-sm-11">
+                    <textarea id="comment" class="form-control" name="comment" placeholder="Enter your comment here..."
+                        rows="4" required></textarea>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn btn-primary">POST COMMENT</button>
+            </div>
+        </form>
+        <hr>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <script src="connection.js"></script>
+
+    <script src="js/db.js"></script>
+    <script src="js/ui.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
