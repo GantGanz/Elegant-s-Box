@@ -1,3 +1,3 @@
 # Elegant-s-Twittard
-Open this url in your browser to visit the web
+Click this url, to visit the website
 https://elegant-s-twittard.web.app
