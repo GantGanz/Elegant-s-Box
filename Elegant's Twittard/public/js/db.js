@@ -1,5 +1,5 @@
 // real-time listener
-db.collection('tweets').onSnapshot((snapshot) => {
+db.collection('tweets').orderBy('time').onSnapshot((snapshot) => {
     snapshot.docChanges().forEach(change => {
         if (change.type === 'added') {
             // add the document data to the web page
