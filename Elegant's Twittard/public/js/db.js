@@ -24,8 +24,8 @@ form.addEventListener('submit', evt => {
 
     const comment = {
         tweet: form.tweet.value,
-        name: name,
-        comment: form.comment.value,
+        name: escapeHtml(name),
+        comment: escapeHtml(form.comment.value),
         time: dateTime
     }
 
@@ -35,3 +35,17 @@ form.addEventListener('submit', evt => {
     form.name.value = '';
     form.comment.value = '';
 });
+
+function escapeHtml(text) {
+    var map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+
+    return text.replace(/[&<>"']/g, function (m) {
+        return map[m];
+    });
+}
