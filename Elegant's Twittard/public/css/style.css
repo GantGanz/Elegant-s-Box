@@ -71,7 +71,7 @@ hr {
 }
 
 .popup .content {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -86,7 +86,7 @@ hr {
 
 .popup .close-btn {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 25px;
     top: 5px;
     width: 30px;
