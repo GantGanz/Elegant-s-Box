@@ -51,20 +51,29 @@
             criticism, which is fun to write and to read. But the bitter truth we critics must face is that in the grand
             scheme of things, the average piece of junk is probably more meaningful than our criticism designating it
             so…</p>
+        <p>...</p>
         <p class="text-justify">Actually, I don’t even know what I'm talking about, in fact, that’s not even my writing
-            (obviously). But anyway, Welcome, welcome to all of you who made it this far (lol).
+            <element class="popup-meme" onclick="togglePopupMemeO(`igor.jpeg`)">(obviously)</element>. But anyway,
+            Welcome,
+            welcome to all of you who made it this far (lol).
         </p>
-        <p class="text-justify">Perhaps you are wondering what is this sh*tty website truly about, well fear not my
-            friends (or some random guy on the internet who accidentally click the link somehow), I'm gonna explain
-            everything to you, well, roughly.</p>
-        <p class="text-justify">So, uhh how do I start, yeah, basically, this is a place for me to go wild and honest
-            about my perceptions of things, whether it's about movies, series, comics, youtube videos, our very own
-            life, and many more, essentially everything that my heart desires to (sounds deep alright).
+        <p class="text-justify">Perhaps you are wondering what is this sh*tty website truly about, well, rest assured
+            <element class="popup-meme"
+                onclick="togglePopupMessage(`(or some random guy on the internet who accidentally click the link somehow)`)">
+                my friends</element>, I'm gonna explain everything to
+            you, well, roughly.</p>
+        <p class="text-justify">So, uhh how do I start.., yeah, basically, this is a place for me to go 'wild and
+            honest' about my perceptions on things, whether it's about movies, series, comics, youtube videos, our very
+            own life, and many more, essentially everything that <element class="popup-meme"
+                onclick="togglePopupMessage(`(sounds deep alright)`)">my
+                heart desires to</element>.
         </p>
-        <p class="text-justify">Don’t expect me to write something in a formal way or on full mannerism or equivalent
-            here, in fact, you're probably gonna hear a lot of swearing or other explicit content. But to be fair, I'll
-            delete it as long as it's not really necessary, or I'm just gonna censored it (like censoring will gonna do
-            anything lol) if I really need to deliver it as an emphasis to my points.</p>
+        <p class="text-justify">But don’t expect me to write something in a formal way or on full mannerism or
+            equivalent here, in fact, you're probably gonna hear a lot of swearing or other explicit content. But to be
+            fair, I wont put it there as long as it's not really necessary, or I'm just gonna <element
+                class="popup-meme" onclick="togglePopupMessage(`(like censoring would gonna do anything lol)`)">censored
+                it</element> if I really need to deliver it as an
+            emphasis to my points.</p>
         <p class="text-justify">Wait, perhaps some of you, if not all of you, probably (*most likely) thinking: "Why
             this dude starts talking in English all of sudden? his poor writing skill, grammar, and constant misspelling
             makes me wanna poke my eyes", well, f*ck you, nah just kidding. Yeah I know I've poor English skill, but
@@ -76,22 +85,28 @@
             for reading it this far.
         </p>
         <p class="text-justify">Speaking of which, I honestly don't expect that someone is gonna reading this or any of
-            my future writing, and I'm fine with that, cus everything that I do is for me and me alone. But if in case
-            some of u genuinely enjoy it, I'll feel honored and happily provide future services, such as adding more and
-            more content or even feature to the website itself. (See the changelog for further reading)</p>
+            my future writing at all, and I'm fine with that, cus everything that I do is for me and me alone. But if in
+            case some of u genuinely enjoy it, I'll feel honored and happily to provide future services, such as adding
+            more and more content or even feature to the website itself.
+            <a href="changelog.html" target="_blank">(See the changelog for further reading)</a></p>
         <p class="text-justify">Lastly, you can just wander around this website, and post a comment on all of my posts,
             whether it's as a sign of appreciation or as a form of disapproval on what I'm writing, either way, it's
             fine. I even go that far and make the commenter's name optional if u really wanna go anonymously and talk
-            sh*t about my post or personal life lol.
+            sh*t about my post or my personal life <element class="popup-meme"
+                onclick="togglePopupMeme(`im-in-danger.jpg`)">lol</element>.
         </p>
-        <p class="text-justify">So in conclusion, this, nah, I'm just gonna repeat that.</p>
-        <p class="text-justify">So in conclusion, Welcome (once again), to Elegant's Twittard, abbreviation from Tw*tter
-            and ret*rd, even though it's almost nothing like Tw*tter and more of a retard lol. That's about it, see ya
-            next time.
+        <p class="text-justify">
+            So <element class="popup-meme" onclick="togglePopupMemeO(`in-conclusion.png`)">in conclusion </element>,
+            Welcome (once again), to
+            Elegant's Twittard, abbreviation from Tw*tter and ret*rd, even though it's almost nothing like Tw*tter and
+            more of a retard <element class="popup-meme" onclick="togglePopupMessage(`Ba dum tss!`)">lol</element>.
+            That's about it, <element class="popup-meme" onclick="togglePopupMemeO(`bye.gif`)">see ya</element>.
         </p>
-        <p class="text-justify">(Btw in case you're dense as rock and didn't notice it despite you already read this
-            far, you can actually hover ur pointer(mouse) or just click the word that colored blue (like the usual color
-            of a link) to find some memes.</p>
+        <p class="text-justify font-weight-lighter">(Btw in case <element class="popup-meme"
+                onclick="togglePopupMemeO(`you-dense.png`)">
+                you're dense as rock
+            </element> and didn't notice it despite you already read this far, you can actually click the word that
+            colored blue (like the usual color of a link) to find some additional comments or memes.)</p>
         <p class="text-justify">TLDR: just read u lazy arse.
         </p>
         <hr>
@@ -127,11 +142,28 @@
         <hr>
     </div>
 
+    <!-- Popup info -->
+    <div class="popup" id="popup-message">
+        <div class="overlay"></div>
+        <div class="content bg-white">
+            <div class="close-btn" onclick="togglePopupMessage()">&times;</div>
+            <br>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="popup" id="popup-meme">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopupMemeO()">&times;</div>
+            <br>
+            <p id="meme"></p>
+        </div>
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
 
     <script src="connection.js"></script>
-
     <script src="js/db.js"></script>
     <script src="js/ui.js"></script>
 
