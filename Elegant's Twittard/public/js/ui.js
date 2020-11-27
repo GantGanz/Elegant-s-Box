@@ -17,14 +17,23 @@ function togglePopupMeme(meme) {
 const renderComments = (data) => {
     // countComments += 1;
     const comments = document.querySelector(`.${data.tweet}`);
-    const html = `
-    <div class="comment">
-        <dt>${data.name}</dt>
-        <small>${data.time}</small>
-        <dd>${data.comment}</dd>
-    </div>
-    `;
-
+    var name = `${data.name}`;
+    var html = `
+        <div class="comment">
+            <dt>${data.name}</dt>
+            <small>${data.time}</small>
+            <dd>${data.comment}</dd>
+        </div>
+        `;
+    if (name == `GantGanz-Admin`) {
+        html = `
+        <div class="comment">
+            <dt><img src="img/star.png" width="10" height="10" loading="lazy"> Gan Gan <img src="img/star.png" width="10" height="10" loading="lazy"></dt>
+            <small>${data.time}</small>
+            <dd>${data.comment}</dd>
+        </div>
+        `;
+    }
     if (comments != null) {
         comments.innerHTML += html;
     }
