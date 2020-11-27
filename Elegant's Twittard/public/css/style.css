@@ -23,15 +23,15 @@ hr {
     border: 1px solid;
 }
 
-.icon-comment:hover {
+/* .icon-comment:hover {
     width: 26px;
     height: 26px;
 }
 
 .icon-love:hover {
-    width: 24.5px;
-    height: 24.5px;
-}
+    width: 23px;
+    height: 23px;
+} */
 
 .inv {
     color: rgba(0, 0, 0, 0);
