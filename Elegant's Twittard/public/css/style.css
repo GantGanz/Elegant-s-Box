@@ -23,8 +23,8 @@ hr {
     border: 1px solid;
 }
 
-.strip-text {
-    text-decoration: line-through;
+.gold {
+    color: #FCC201;
 }
 
 /* .icon-comment:hover {

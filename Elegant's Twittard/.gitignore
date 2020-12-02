@@ -1,7 +1,7 @@
 # .gitignore
 firebase.json
 .firebaserc
-# connection.js
+connection.js
 
 # Logs
 logs

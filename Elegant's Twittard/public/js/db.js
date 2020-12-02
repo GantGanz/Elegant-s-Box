@@ -11,11 +11,11 @@ db.collection('tweets').orderBy('time').onSnapshot((snapshot) => {
 // add new recipe
 const form = document.querySelector('form');
 form.addEventListener('submit', evt => {
-    var name = "Anonim";
+    // var name = "Anonim";
     evt.preventDefault();
-    if (form.name.value != '') {
-        name = form.name.value;
-    }
+    // if (form.name.value != '') {
+    //     name = form.name.value;
+    // }
 
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -24,7 +24,7 @@ form.addEventListener('submit', evt => {
 
     const comment = {
         tweet: form.tweet.value,
-        name: escapeHtml(name),
+        name: escapeHtml(form.name.value),
         comment: escapeHtml(form.comment.value),
         time: dateTime
     }

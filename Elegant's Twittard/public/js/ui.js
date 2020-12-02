@@ -25,10 +25,11 @@ const renderComments = (data) => {
             <dd>${data.comment}</dd>
         </div>
         `;
-    if (name == `GantGanz-Admin`) {
+    // Yaaaaaaaaaaaah ketahuan dong
+    if (name === `GantGanz-Admin`) {
         html = `
         <div class="comment">
-            <dt><img src="img/star.png" width="10" height="10" loading="lazy"> Gan Gan <img src="img/star.png" width="10" height="10" loading="lazy"></dt>
+            <dt class="gold">Gan Gan</dt>
             <small>${data.time}</small>
             <dd>${data.comment}</dd>
         </div>
