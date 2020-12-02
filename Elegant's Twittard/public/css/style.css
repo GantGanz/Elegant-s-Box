@@ -23,6 +23,10 @@ hr {
     border: 1px solid;
 }
 
+.strip-text {
+    text-decoration: line-through;
+}
+
 /* .icon-comment:hover {
     width: 26px;
     height: 26px;
