@@ -27,6 +27,10 @@ hr {
     color: #FCC201;
 }
 
+.visitorCounter {
+    margin-top: -15px;
+}
+
 /* .icon-comment:hover {
     width: 26px;
     height: 26px;
