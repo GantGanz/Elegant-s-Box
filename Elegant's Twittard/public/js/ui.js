@@ -40,6 +40,14 @@ const renderComments = (data) => {
     }
 };
 
+const countEl = document.getElementById('visitor');
+updateVisitCount();
+
+function updateVisitCount() {
+    fetch('https://api.countapi.xyz/update/elegantsbox/GantGanz-Admin/?amount=1').then(res => res.json()).then(res => {
+        countEl.innerHTML = `Visitor=` + res.value;
+    })
+}
 // db.collection('tweets').onSnapshot((snapshot) => {
 //     snapshot.docChanges().forEach(change => {
 //         if (change.type === 'added') {

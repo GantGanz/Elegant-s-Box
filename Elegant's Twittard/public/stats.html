@@ -31,14 +31,7 @@
                 <a class="nav-link" href="about.html">About</a>
                 <a class="nav-link active" href="stats.html">Stats</a>
                 <a class="nav-link" href="changelog.html">Changelog</a>
-                <div class="visitorCounter ml-5">
-                    <a href='https://www.symptoma.ro/'>https://www.symptoma.ro/</a>
-                    <script type='text/javascript'
-                        src='https://www.freevisitorcounters.com/auth.php?id=3bd406784885c71aae5fc7e3faf4f12bcdf608c0'>
-                    </script>
-                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/772716/t/5">
-                    </script>
-                </div>
+                <a class="nav-link active" href="stats.html" id="visitor"></a>
             </div>
         </div>
     </nav>
@@ -52,6 +45,13 @@
             <hr>
         </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <script src="js/connection.js"></script>
+
+    <script src="js/db.js"></script>
+    <script src="js/ui.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

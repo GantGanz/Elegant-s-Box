@@ -31,14 +31,7 @@
                 <a class="nav-link" href="about.html">About</a>
                 <a class="nav-link" href="stats.html">Stats</a>
                 <a class="nav-link active" href="changelog.html">Changelog</a>
-                <div class="visitorCounter ml-5">
-                    <a href='https://www.symptoma.ro/'>https://www.symptoma.ro/</a>
-                    <script type='text/javascript'
-                        src='https://www.freevisitorcounters.com/auth.php?id=3bd406784885c71aae5fc7e3faf4f12bcdf608c0'>
-                    </script>
-                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/772716/t/5">
-                    </script>
-                </div>
+                <a class="nav-link active" href="stats.html" id="visitor"></a>
             </div>
         </div>
     </nav>
@@ -66,8 +59,21 @@
             <li>Open donation feature LMAO</li>
             <li>Make this website into PWA</li>
         </ul>
-        <p>Changelog : <span class="badge badge-primary badge-pill">24</span></p>
+        <p>Changelog : <span class="badge badge-primary badge-pill">25</span></p>
         <ul>
+            <li>
+                <a data-toggle="collapse" href="#collapse12Dec20" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    12 December 2020
+                </a>
+                <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <div class="collapse" id="collapse12Dec20">
+                <ul>
+                    <li>Fixing the visitor counter bug that only occurs on mobile devices, by using CountAPI that
+                        doesn't record the visitor's info, oh well, that's something.</li>
+                </ul>
+            </div>
             <li>
                 <a data-toggle="collapse" href="#collapse10Dec20" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
