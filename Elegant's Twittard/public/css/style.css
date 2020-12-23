@@ -58,6 +58,10 @@ hr {
     background: linear-gradient(#10416b, black);
 }
 
+.bg-winter20 {
+    background: linear-gradient(to right, #0f1225, #1f4b8e, #adbccd);
+}
+
 .bg-fall20 {
     background: linear-gradient(to left, rgb(233, 185, 27), rgb(190, 71, 28), rgb(174, 19, 35));
 }
